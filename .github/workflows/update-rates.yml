@@ -2,8 +2,8 @@ name: Update Mortgage Rates
 
 on:
   schedule:
-    # Thursdays at 17:00 UTC (FRED publishes PMMS around 12:00 ET = 16:00/17:00 UTC)
-    - cron: '0 17 * * 4'
+    # Fridays at 12:00 UTC (8am ET) — PMMS is published Thursday, FRED has it by Friday morning
+    - cron: '0 12 * * 5'
   # Allow manual runs from the Actions tab
   workflow_dispatch:
 
